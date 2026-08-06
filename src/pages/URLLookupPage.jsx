@@ -1,9 +1,11 @@
+import { Link } from "react-router";
 
 export default function URLLookupPage() {
     return (
-        <div>
-            <h1 className='text-4xl font-bold'>URL Lookup Tool</h1>
-            <p>Enter a URL to retrieve details about it.</p>
+        <div className="app-page">
+            <h1 className="app-title">URL Lookup Tool</h1>
+            <p className="app-description">Enter a URL to retrieve details about it.</p>
+            <Link className="app-back-link" to='/'>Home</Link>
         </div>
     )
 }
